@@ -17,6 +17,7 @@ __version__ = '0.0.5'
 
 
 def download_eigen():
+    print("Download eigen...")
     zippath = os.path.join('deps', 'eigen.zip')
     if not os.path.exists('deps'): os.mkdir('deps')
     if not os.path.exists(zippath):
@@ -32,6 +33,7 @@ def get_eigen():
     return download_eigen()
     
 def download_pybind():
+    print("Download pybind...")
     zippath = os.path.join('deps', 'pybind.zip')
     if not os.path.exists('deps'): os.mkdir('deps')
     if not os.path.exists(zippath):
